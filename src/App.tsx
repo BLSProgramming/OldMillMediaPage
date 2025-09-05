@@ -5,6 +5,10 @@ import { History } from './Pages/history'
 import { FAQ } from './Pages/faq'
 import { Layout } from './Layout'
 import { Team } from './Pages/team'
+import { Photography } from './Pages/photography'
+import { Videography } from './Pages/videography'
+import { Audio } from './Pages/audio'
+
 
 function App() {
 return (
@@ -15,6 +19,9 @@ return (
       <Route path="/history" element={<History />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/team" element={<Team />} />
+      <Route path="/audio" element={<Audio />} />
+      <Route path="/photography" element={<Photography />} />
+      <Route path="/Videography" element={<Videography />} />
       </Route>
     </Routes>
   </Router>
