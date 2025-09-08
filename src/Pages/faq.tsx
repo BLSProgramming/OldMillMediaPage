@@ -57,7 +57,7 @@ export function FAQ() {
           Frequently Asked Questions
         </h1>
 
-        <div className="max-w-2xl w-full space-y-4 mx-auto">
+        <div className="max-w-3xl w-full space-y-4 mx-auto">
           {faqs.map((faq, idx) => (
             <div
               key={idx}
@@ -75,7 +75,7 @@ export function FAQ() {
                 {faq.question}
               </span>
               <span
-                className={`text-4xl ml-4 transform transition-transform duration-300 ${
+                className={`text-5xl ml-4 transform transition-transform duration-300 ${
                   openIndex === idx ? "rotate-45 text-purple-600" : "text-gray-600"
                 }`}
               >
@@ -90,7 +90,7 @@ export function FAQ() {
                     : "max-h-0 opacity-0 -translate-y-2"
                 }`}
               >
-                <p className="text-gray-700">{faq.answer}</p>
+                <p className="text-gray-700 text-xl">{faq.answer}</p>
               </div>
             </div>
           ))}
