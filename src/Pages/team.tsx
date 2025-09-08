@@ -32,7 +32,6 @@ export function Team() {
       role: "Assistant Computer Tech",
       img: kushal
     },
-   
   ];
 
   return (
