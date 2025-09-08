@@ -1,4 +1,3 @@
-import background_1 from "../assets/background_1.jpg";
 import { PageContainer } from "../Components/PageContainer";
 import { useState } from "react";
 
@@ -48,34 +47,47 @@ export function FAQ() {
   };
 
   return (
-    <div
-      className="relative min-h-screen bg-cover bg-center flex flex-col items-center justify-start px-6 pt-16"
-      style={{ backgroundImage: `url(${background_1})` }}
-    >
+    <div className="relative min-h-screen bg-gradient-radial from-purple-800 via-purple-900 to-black text-white">
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="w-[600px] h-[600px] rounded-full bg-purple-700/20 blur-3xl"></div>
+      </div>
+
       <PageContainer>
-        <h1 className="text-4xl font-bold text-white mb-8 text-center">
+        <h1 className="text-5xl font-bold text-white mb-8 text-center">
           Frequently Asked Questions
         </h1>
 
-
-        <div className="max-w-2xl w-full bg-white/90 rounded-lg shadow-md overflow-hidden space-y-3">
+        <div className="max-w-2xl w-full space-y-4 mx-auto">
           {faqs.map((faq, idx) => (
-            <div key={idx} className="border-b last:border-none">
+            <div
+              key={idx}
+              className="bg-white/90 rounded-lg shadow-lg overflow-hidden transition hover:shadow-purple-500/40"
+            >
               <button
-                onClick={() => toggleFAQ(idx)}
-                className="w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none hover:bg-gray-100 transition"
+              onClick={() => toggleFAQ(idx)}
+              className={`w-full px-6 py-4 flex items-center justify-between focus:outline-none transition ${
+                openIndex === idx
+                  ? "bg-purple-50 border-l-4 border-purple-500"
+                  : "hover:bg-gray-100"
+              }`}
+            >
+              <span className="text-lg font-medium text-gray-900 text-center flex-1">
+                {faq.question}
+              </span>
+              <span
+                className={`text-4xl ml-4 transform transition-transform duration-300 ${
+                  openIndex === idx ? "rotate-45 text-purple-600" : "text-gray-600"
+                }`}
               >
-                <span className="text-lg font-medium text-gray-900">
-                  {faq.question}
-                </span>
-                <span className="text-xl text-gray-600">
-                  {openIndex === idx ? "−" : "+"}
-                </span>
-              </button>
+                +
+              </span>
+            </button>
 
               <div
-                className={`px-6 overflow-hidden transition-all duration-500 ease-in-out ${
-                  openIndex === idx ? "max-h-40 py-2" : "max-h-0"
+                className={`px-6 transition-all duration-500 ease-in-out overflow-hidden text-center ${
+                  openIndex === idx
+                    ? "max-h-40 py-3 opacity-100 translate-y-0"
+                    : "max-h-0 opacity-0 -translate-y-2"
                 }`}
               >
                 <p className="text-gray-700">{faq.answer}</p>
