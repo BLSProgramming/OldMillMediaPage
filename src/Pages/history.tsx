@@ -1,7 +1,7 @@
 import { PageContainer } from "../Components/PageContainer";
 
 
-//import bryan from "../assets/bryan.jpg";
+
 
 
 export function History() {

@@ -1,5 +1,5 @@
 import { PageContainer } from "../Components/PageContainer"
-import bryan from "../assets/bryan.jpg"
+
 
 
 
@@ -18,7 +18,7 @@ export function Photography() {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {[bryan, ].map((img, idx) => (
+          {[].map((img, idx) => (
             <div
               key={idx}
               className="overflow-hidden rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
