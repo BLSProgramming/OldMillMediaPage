@@ -9,7 +9,7 @@ import { Layout } from './Layout'
 import { Team } from './Pages/team'
 import { Photography } from './Pages/photography'
 import { Videography } from './Pages/videography'
-import { Audio } from './Pages/audio'
+import { Audio } from './Pages/audioProduction'
 import { PageWrapper } from './Components/PageWrapper'
 
 function AnimatedRoutes() {
@@ -23,7 +23,7 @@ function AnimatedRoutes() {
           <Route path="/history" element={<PageWrapper><History /></PageWrapper>} />
           <Route path="/faq" element={<PageWrapper><FAQ /></PageWrapper>} />
           <Route path="/team" element={<PageWrapper><Team /></PageWrapper>} />
-          <Route path="/audio" element={<PageWrapper><Audio /></PageWrapper>} />
+          <Route path="/audioProduction" element={<PageWrapper><Audio /></PageWrapper>} />
           <Route path="/photography" element={<PageWrapper><Photography /></PageWrapper>} />
           <Route path="/videography" element={<PageWrapper><Videography /></PageWrapper>} />
         </Route>

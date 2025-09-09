@@ -1,9 +1,9 @@
 import { PageContainer } from "../Components/PageContainer"
-import bryan from "../assets/bryan.jpg"
 
 
 
-export function Photography() {
+
+export function Audio() {
   return (
     <div className="relative min-h-screen bg-gradient-radial from-purple-800 via-purple-900 to-black text-white">
       
@@ -14,11 +14,11 @@ export function Photography() {
       <PageContainer>
         
         <h2 className="text-3xl font-bold text-center mb-6">
-          Photography Gallery
+          Audio Production Gallery
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {[bryan, ].map((img, idx) => (
+          {[].map((img, idx) => (
             <div
               key={idx}
               className="overflow-hidden rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
