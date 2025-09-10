@@ -49,7 +49,7 @@ export function Navbar() {
                 <li>
                   <Link
                     to="/photography"
-                    className="block w-full px-4 py-3 bg-white text-black rounded-md shadow hover:bg-gray-200 transition"
+                    className="block w-full px-4 py-2.5 bg-white text-black rounded-md shadow hover:bg-gray-200 transition"
                   >
                     Photography
                   </Link>
@@ -57,7 +57,7 @@ export function Navbar() {
                 <li>
                   <Link
                     to="/videography"
-                    className="block w-full px-4 py-3 bg-white text-black rounded-md shadow hover:bg-gray-200 transition"
+                    className="block w-full px-4 py-2.5 bg-white text-black rounded-md shadow hover:bg-gray-200 transition"
                   >
                     Videography
                   </Link>
@@ -65,7 +65,7 @@ export function Navbar() {
                 <li>
                   <Link
                     to="/audioProduction"
-                    className="block w-full px-4 py-3 bg-white text-black rounded-md shadow hover:bg-gray-200 transition"
+                    className="block w-full px-4 py-2.5 bg-white text-black rounded-md shadow hover:bg-gray-200 transition"
                   >
                     Audio Production
                   </Link>
