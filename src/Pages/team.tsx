@@ -3,8 +3,12 @@ import kushal from "../assets/kushal.jpg";
 import trent from "../assets/trent.jpg";
 import johnson from "../assets/johnson.jpg";
 import jaylon from "../assets/jaylon.jpg";
+import gavin from "../assets/gavin.jpg"
+import rashawn from "../assets/rashawn.jpg"
+
 import { PageContainer } from "../Components/PageContainer";
-import TeamCard from "../Components/TeamCard"; // ✅ Use the reusable component
+import TeamCard from "../Components/TeamCard"; 
+
 
 
 export function Team() {
@@ -20,14 +24,14 @@ export function Team() {
       name: "Bryan Sauber II", 
       role: "Lead Computer Tech", 
       email: "blsauberii@gmail.com",
-      phone: "(443)-261-8975",
+      phone: "(443) 261-8975",
       image: bryan,
     },
     {
       name: "Trent Fairbee",
       role: "Assistant Producer",
       email: "trentfairbee@gmail.com",
-      phone: "(410)-446-1912",
+      phone: "(410) 446-1912",
       image: trent,
     },
     {
@@ -43,6 +47,20 @@ export function Team() {
       email: "",
       phone: "",
       image: jaylon,
+    },
+    {
+      name: "Gavin Paul Silkworth",
+      role: "Morning Announcement Director",
+      email: "",
+      phone: "(240) 315-9793",
+      image: gavin
+    },
+    {
+      name: "Rashawn Carter",
+      role: "Photo/Video Producer",
+      email: "rshwncrtr@gmail.com",
+      phone: "(808) 650-8645",
+      image: rashawn
     },
   ];
 

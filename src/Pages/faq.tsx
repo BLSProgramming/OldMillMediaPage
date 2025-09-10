@@ -64,24 +64,24 @@ export function FAQ() {
               className="bg-white/90 rounded-lg shadow-lg overflow-hidden transition hover:shadow-purple-500/40"
             >
               <button
-              onClick={() => toggleFAQ(idx)}
-              className={`w-full px-6 py-4 flex items-center justify-between focus:outline-none transition ${
-                openIndex === idx
-                  ? "bg-purple-50 border-l-4 border-purple-500"
-                  : "hover:bg-gray-100"
-              }`}
-            >
-              <span className="text-lg font-medium text-gray-900 text-center flex-1">
-                {faq.question}
-              </span>
-              <span
-                className={`text-5xl ml-4 transform transition-transform duration-300 ${
-                  openIndex === idx ? "rotate-45 text-purple-600" : "text-gray-600"
+                onClick={() => toggleFAQ(idx)}
+                className={`w-full px-6 py-4 flex items-center justify-between focus:outline-none transition ${
+                  openIndex === idx
+                    ? "bg-purple-50 border-l-4 border-purple-500"
+                    : "hover:bg-gray-100"
                 }`}
               >
-                +
-              </span>
-            </button>
+                <span className="text-lg font-medium text-gray-900 text-center flex-1">
+                  {faq.question}
+                </span>
+                <span
+                  className={`text-5xl ml-4 transform transition-transform duration-300 ${
+                    openIndex === idx ? "rotate-45 text-purple-600" : "text-gray-600"
+                  }`}
+                >
+                  +
+                </span>
+              </button>
 
               <div
                 className={`px-6 transition-all duration-500 ease-in-out overflow-hidden text-center ${
@@ -94,6 +94,18 @@ export function FAQ() {
               </div>
             </div>
           ))}
+
+          
+          <div className="text-center mt-8">
+            <a
+              href="https://forms.gle/zdwdZaRitpWfNExC8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-purple-300 hover:text-purple-400 underline text-lg"
+            >
+              Send questions to be answered →
+            </a>
+          </div>
         </div>
       </PageContainer>
     </div>
