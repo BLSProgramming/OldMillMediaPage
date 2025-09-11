@@ -1,5 +1,4 @@
 import bryan from "../assets/bryan.jpg";
-import kushal from "../assets/kushal.jpg";
 import trent from "../assets/trent.jpg";
 import johnson from "../assets/johnson.jpg";
 import jaylon from "../assets/jaylon.jpg";
@@ -35,13 +34,6 @@ export function Team() {
       image: trent,
     },
     {
-      name: "Kushal Khatri",
-      role: "Assistant Computer Tech",
-      email: "",
-      phone: "",
-      image: kushal,
-    },
-    {
       name: "Jaylon Hollis",
       role: "Editor",
       email: "",
@@ -50,7 +42,7 @@ export function Team() {
     },
     {
       name: "Gavin Paul Silkworth",
-      role: "Morning Announcement Director",
+      role: "Director of Morning Announcements",
       email: "",
       phone: "(240) 315-9793",
       image: gavin
