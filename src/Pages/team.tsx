@@ -1,9 +1,10 @@
-import bryan from "../assets/bryan.jpg";
+import bryan from "../assets/bryan.png";
 import trent from "../assets/trent.jpg";
 import johnson from "../assets/johnson.jpg";
 import jaylon from "../assets/jaylon.jpg";
 import gavin from "../assets/gavin.jpg";
 import rashawn from "../assets/rashawn.jpg";
+import dakota from "../assets/dakota.jpg";
 
 import { PageContainer } from "../Components/PageContainer";
 import TeamCard from "../Components/TeamCard";
@@ -40,7 +41,7 @@ export function Team() {
     },
     {
       name: "Gavin Silkworth",
-      role: "Director of Morning Announcements",
+      role: "Morning Announcements Director",
       email: "",
       phone: "(240) 315-9793",
       image: gavin,
@@ -51,6 +52,13 @@ export function Team() {
       email: "rshwncrtr@gmail.com",
       phone: "(808) 650-8645",
       image: rashawn,
+    },
+    {
+      name: "Dakota Penvose",
+      role: "Social Media Director",
+      email: "lildauiri08@gmail.com",
+      phone: "",
+      image: dakota,
     },
   ];
 

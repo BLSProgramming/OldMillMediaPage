@@ -1,4 +1,3 @@
-
 import qrcode from "../assets/qrcode.png";
 import { PageContainer } from "../Components/PageContainer";
 
@@ -6,8 +5,8 @@ export function Home() {
   return (
     <div className="relative min-h-screen bg-gradient-radial from-purple-800 via-purple-900 to-black text-white">
       <div className="absolute inset-0 flex items-center justify-center">
-      <div className="w-[600px] h-[600px] rounded-full bg-purple-700/20 blur-3xl"></div>
-    </div>
+        <div className="w-[600px] h-[600px] rounded-full bg-purple-700/20 blur-3xl"></div>
+      </div>
 
       <PageContainer>
         <h1 className="text-6xl font-extrabold text-white text-center">
