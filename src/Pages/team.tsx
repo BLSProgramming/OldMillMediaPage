@@ -2,13 +2,11 @@ import bryan from "../assets/bryan.jpg";
 import trent from "../assets/trent.jpg";
 import johnson from "../assets/johnson.jpg";
 import jaylon from "../assets/jaylon.jpg";
-import gavin from "../assets/gavin.jpg"
-import rashawn from "../assets/rashawn.jpg"
+import gavin from "../assets/gavin.jpg";
+import rashawn from "../assets/rashawn.jpg";
 
 import { PageContainer } from "../Components/PageContainer";
-import TeamCard from "../Components/TeamCard"; 
-
-
+import TeamCard from "../Components/TeamCard";
 
 export function Team() {
   const members = [
@@ -19,9 +17,9 @@ export function Team() {
       phone: "(410) 969-9010",
       image: johnson,
     },
-    { 
-      name: "Bryan Sauber II", 
-      role: "Lead Computer Tech", 
+    {
+      name: "Bryan Sauber II",
+      role: "Lead Computer Tech",
       email: "blsauberii@gmail.com",
       phone: "(443) 261-8975",
       image: bryan,
@@ -41,18 +39,18 @@ export function Team() {
       image: jaylon,
     },
     {
-      name: "Gavin Paul Silkworth",
+      name: "Gavin Silkworth",
       role: "Director of Morning Announcements",
       email: "",
       phone: "(240) 315-9793",
-      image: gavin
+      image: gavin,
     },
     {
       name: "Rashawn Carter",
       role: "Photo/Video Producer",
       email: "rshwncrtr@gmail.com",
       phone: "(808) 650-8645",
-      image: rashawn
+      image: rashawn,
     },
   ];
 
