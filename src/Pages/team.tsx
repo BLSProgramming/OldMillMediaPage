@@ -1,10 +1,13 @@
 import bryan from "../assets/bryan.png";
 import trent from "../assets/trent.jpg";
 import johnson from "../assets/johnson.jpg";
-import jaylon from "../assets/jaylon.jpg";
 import gavin from "../assets/gavin.jpg";
 import rashawn from "../assets/rashawn.jpg";
 import dakota from "../assets/dakota.jpg";
+import daniella from "../assets/daniella.jpg";
+import landon from "../assets/landon.jpg";
+import jeremy from "../assets/jeremy.jpg";
+
 
 import { PageContainer } from "../Components/PageContainer";
 import TeamCard from "../Components/TeamCard";
@@ -33,13 +36,6 @@ export function Team() {
       image: trent,
     },
     {
-      name: "Jaylon Hollis",
-      role: "Editor",
-      email: "",
-      phone: "",
-      image: jaylon,
-    },
-    {
       name: "Gavin Silkworth",
       role: "Morning Announcements Director",
       email: "",
@@ -60,6 +56,27 @@ export function Team() {
       phone: "",
       image: dakota,
     },
+    {
+      name: "Landon Bee",
+      role: "Photo/Video Producer",
+      email: "",
+      phone: "",
+      image: landon,
+    },
+    {
+      name: "Daniella Panete",
+      role: "Morning Announcements Speaker",
+      email: "",
+      phone: "",
+      image: daniella,
+    },
+    {
+      name: "Jeremy",
+      role: "Morning Announcements Speaker",
+      email: "",
+      phone: "",
+      image: jeremy,
+    },
   ];
 
   return (
@@ -74,16 +91,30 @@ export function Team() {
         </h1>
 
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
-          {members.map((member, idx) => (
-            <TeamCard
-              key={idx}
-              image={member.image}
-              name={member.name}
-              role={member.role}
-              email={member.email}
-              phone={member.phone}
-            />
-          ))}
+          {members.map((member, idx) => {
+      const isSpacer = !member.name && !member.role && !member.image;
+
+      if (isSpacer) {
+        return (
+          <div
+            key={`spacer-${idx}`}
+            className="hidden lg:block invisible h-0"
+            aria-hidden="true"
+          />
+        );
+      }
+
+      return (
+        <TeamCard
+          key={idx}
+          image={member.image}
+          name={member.name}
+          role={member.role}
+          email={member.email}
+          phone={member.phone}
+    />
+  );
+})}
         </div>
       </PageContainer>
     </div>
