@@ -9,7 +9,7 @@ export function Layout() {
         <Navbar/>
       </div>
       <main className="relative z-10">
-        <div className="max-w-6xl mx-auto p-6">
+        <div className="max-w-8xl mx-auto p-6">
           <Outlet/>
         </div>
       </main>

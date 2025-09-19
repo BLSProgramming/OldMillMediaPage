@@ -11,7 +11,7 @@ interface TeamCardProps {
 const TeamCard: React.FC<TeamCardProps> = ({ image, name, role, email, phone }) => {
   return (
     <div className="w-full max-w-xs mx-auto [perspective:1000px] group">
-      <div className="relative w-full h-80 transform-gpu transition-transform duration-700 ease-in-out [transform-style:preserve-3d] [will-change:transform] group-hover:[transform:rotateY(180deg)]">
+      <div className="relative w-full h-90 transform-gpu transition-transform duration-700 ease-in-out [transform-style:preserve-3d] [will-change:transform] group-hover:[transform:rotateY(180deg)]">
 
         
         <div className="absolute inset-0 rounded-2xl shadow-lg overflow-hidden bg-white/90 backdrop-blur-sm flex flex-col items-center [backface-visibility:hidden] pointer-events-auto group-hover:pointer-events-none">

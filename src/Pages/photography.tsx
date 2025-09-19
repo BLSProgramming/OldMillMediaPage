@@ -1,5 +1,3 @@
-import { PageContainer } from "../Components/PageContainer";
-
 import football1 from "../assets/Sports Photos/football1.jpg";
 import football2 from "../assets/Sports Photos/football2.jpg";
 import football3 from "../assets/Sports Photos/football3.jpg";
@@ -24,18 +22,18 @@ export function Photography() {
         <div className="w-[700px] h-[700px] rounded-full bg-purple-700/20 blur-3xl"></div>
       </div>
 
-      <PageContainer>
-        
-        <h2 className="text-4xl  font-extrabold text-center mb-12 tracking-wide bg-gradient-to-r bg-clip-text drop-shadow-lg">
+      
+      <div className="relative p-8 md:p-14 rounded-2xl w-full max-w-[116rem] mx-auto bg-white/5 backdrop-blur-md shadow-xl">
+        <h2 className="text-5xl font-extrabold text-center mb-16 tracking-wide bg-gradient-to-r bg-clip-text drop-shadow-lg">
           Photography Gallery
         </h2>
 
         
-        <section className="mb-16">
-          <h3 className="text-2xl font-semibold text-center mb-8 uppercase tracking-wider text-purple-200 drop-shadow-sm">
+        <section className="mb-20">
+          <h3 className="text-3xl font-semibold text-center mb-10 uppercase tracking-wider text-purple-200 drop-shadow-sm">
             Football
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {footballImages.map((img, idx) => (
               <div
                 key={idx}
@@ -51,12 +49,12 @@ export function Photography() {
           </div>
         </section>
 
-        
-        <section className="mb-16">
-          <h3 className="text-2xl font-semibold text-center mb-8 uppercase tracking-wider text-purple-200 drop-shadow-sm">
+
+        <section className="mb-20">
+          <h3 className="text-3xl font-semibold text-center mb-10 uppercase tracking-wider text-purple-200 drop-shadow-sm">
             Cheer
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {cheerImages.map((img, idx) => (
               <div
                 key={idx}
@@ -72,12 +70,11 @@ export function Photography() {
           </div>
         </section>
 
-        
-        <section className="mb-16">
-          <h3 className="text-2xl font-semibold text-center mb-8 uppercase tracking-wider text-purple-200 drop-shadow-sm">
+        <section className="mb-20">
+          <h3 className="text-3xl font-semibold text-center mb-10 uppercase tracking-wider text-purple-200 drop-shadow-sm">
             Volleyball
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {volleyballImages.map((img, idx) => (
               <div
                 key={idx}
@@ -92,7 +89,7 @@ export function Photography() {
             ))}
           </div>
         </section>
-      </PageContainer>
+      </div>
     </div>
   );
 }
