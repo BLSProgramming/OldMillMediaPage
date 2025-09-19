@@ -6,7 +6,13 @@ import rashawn from "../assets/rashawn.jpg";
 import dakota from "../assets/dakota.jpg";
 import daniella from "../assets/daniella.jpg";
 import landon from "../assets/landon.jpg";
-import jeremy from "../assets/jeremy.jpg";
+import sophia from "../assets/sophia.jpg";
+import chris from "../assets/chris.jpg";
+import colin from "../assets/colin.jpg";
+import charlee from "../assets/charlee.jpg";
+import anise from "../assets/anise.jpg";
+import jaylin from "../assets/jaylin.jpg";
+
 
 
 import { PageContainer } from "../Components/PageContainer";
@@ -65,17 +71,59 @@ export function Team() {
     },
     {
       name: "Daniella Panete",
-      role: "Morning Announcements Speaker",
+      role: "News Anchor",
       email: "",
       phone: "",
       image: daniella,
     },
     {
-      name: "Jeremy",
-      role: "Morning Announcements Speaker",
+      name: "Colin",
+      role: "Production Assistant",
       email: "",
       phone: "",
-      image: jeremy,
+      image: colin,
+    },
+    {
+      name: "Chris Bonner",
+      role: "Visual Analyst",
+      email: "",
+      phone: "",
+      image: chris,
+    },
+    {
+      name: "Charlee Austin",
+      role: "AV Lead",
+      email: "",
+      phone: "",
+      image: charlee,
+    },
+    {
+      name: "Sophia Ramos",
+      role: "Sports Photography",
+      email: "tthroughsophiaseeyes@gmail.com",
+      phone: "(667) 325-9787",
+      image: sophia,
+    },
+    {
+      name: "",
+      role: "",
+      email: "",
+      phone: "",
+      image: "",
+    },
+    {
+      name: "Anise Matheny",
+      role: "News Anchor",
+      email: "",
+      phone: "",
+      image: anise,
+    },
+    {
+      name: "Jaylin Johnson",
+      role: "News Anchor",
+      email: "",
+      phone: "",
+      image: jaylin,
     },
   ];
 
