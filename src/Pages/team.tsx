@@ -117,6 +117,7 @@ export function Team() {
       email: "",
       phone: "",
       image: anise,
+      
     },
     {
       name: "Jaylin Johnson",
